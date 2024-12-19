@@ -1,0 +1,174 @@
+#ribbon {
+    display: flex;
+    background-color: hsl(75, 100%,90%);
+    animation: 2.5s infinite alternate ease-out glowheader;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 25px;
+    min-height: 21.5px;
+    max-height:21.5px;
+    align-content: flex-start;
+    padding-right: 35px;    
+}
+a, a:hover, a:active, a:visited { 
+    color: white;
+}
+html, wrapper
+{
+    background-color: hsl(75, 100%,90%);
+    animation: 3S alternate ease-out breathing-color--dark;
+}
+
+.blacktext {
+    color: #3F2860;
+}
+b {
+    color: #3F2860;
+}
+#sigma {
+    font-size: 9.1px;
+}
+nav a {
+    font-weight: bold;
+    font-size: bold;
+    transition: all 1.2s ease-out;
+    text-decoration: none;  
+}
+.fadeingraph {
+    animation: fadeWorkAnimation ease-in-out 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+nav a:hover {
+    font-size:20.5px;
+    font-size-adjust: 2px;
+    color: #b6dbe9;
+    transition: all 2s grow ease-out;
+}
+  
+h1 {
+    font-size: 30px;
+    line-height: 120%;  
+}
+body {
+    color: #3F2860;
+    font-family: Verdana, Arial, sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+#wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ul {
+    float:left;
+}
+li {
+    line-height: 140%;  
+}
+#zoominimage {
+    transition: all 1.4s ease-out;
+}
+#zoominimage:hover,
+#zoominimage:focus{
+    width: 447px;
+    height: 267px;
+}
+
+glowred {
+    animation: glowred 2s infinite alternate;
+}
+
+glowblue {
+    animation: glowblue 2s infinite alternate;
+}
+
+glowgreen {
+    animation: glowgreen 2s infinite alternate;
+}
+
+
+/*glow code*/
+
+@keyframes glowred {
+    to {
+        text-shadow: 0 0 4px rgb(255, 71, 71);
+    }
+}
+@keyframes glowblue {
+    to {
+        text-shadow: 0 0 4px rgb(71, 203, 255);
+    }
+}
+@keyframes glowgreen {
+    to {
+        text-shadow: 0 0 4px rgb(71, 255, 95);
+    }
+}
+@keyframes glowyellow {
+    to {
+        text-shadow: 0 0 4px rgb(252, 255, 71);
+    }
+}
+
+/*little keyframe nav a thing*/
+@keyframes breathing-color--dark {
+    from
+    {
+        background-color: hsl(0, 0%, 84%);
+    }
+    to
+    {
+        background-color: hsl(75, 100%,90%);
+    }
+}
+@keyframes glowheader {
+    from {    
+        background-color: #000000;
+    } to {
+        background-color: #222222;
+    }
+}
+/*fade in on site open*/
+h1 {
+    animation: fadeInAnimation ease-out 2.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeTestAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeWorkAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(0.4vh);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.fadein {
+    animation: fadeWorkAnimation ease-in-out 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
